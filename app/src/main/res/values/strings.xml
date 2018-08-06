@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="no_news">No news</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="explain_text">This app retrieves data using the guardian\'s API looking for the term \'art\'</string>
+    <string name="splitter">\u0020·\u0020</string>
+</resources>
