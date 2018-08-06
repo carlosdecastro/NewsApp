@@ -7,25 +7,24 @@ import android.content.Loader;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<ArrayList<News>>{
 
     public static final String LOG_TAG = MainActivity.class.getName();
-    private NewsAdapter mAdapter;
-
     private static final String GUARDIANAPI_REQUEST_URL =
             "https://content.guardianapis.com/search?show-tags=contributor&q=art&api-key=1bea4277-7799-4259-8c91-0807050f3b81";
-
+    private NewsAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
